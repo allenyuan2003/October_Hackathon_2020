@@ -79,3 +79,15 @@ html {
     font-size: 25px;
     border: 1px solid #2c2653;
 }
+
+.intro-image {
+    filter: blur(2px) brightness(50%);
+}
+
+.intro-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Whitney', sans-serif;
+}
+
