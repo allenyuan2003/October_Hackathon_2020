@@ -1,4 +1,4 @@
 //header
-#!/bin/node
+// #!/bin/node
 
 // start
