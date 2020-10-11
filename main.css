@@ -4,7 +4,7 @@ html {
     padding: 0;
     margin: 0;
     background: #fff;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -19,7 +19,8 @@ html {
 :root {
     font-family: arial;
     color: #fff;
-    --heading-padding: 15px 0px;
+    --header-height: 30px;
+    --heading-padding: calc(15px / 2) 0px;
     --heading-font-size: 25px;
 
     /* Important */
@@ -33,63 +34,68 @@ html {
 #app #header {
     /* collapse all items inside of header */
     display: flex;
-    background-color: darkblue;
+    width: 100vw;
+    background-color: #3f3772;
     height: auto !important;
     font-size: var(--heading-font-size);
     padding: var(--soft-padding-x);
+    color: #fff;
 }
 
 #app #header .group-name {
-    width: 48%;
-    color: #fff;
+    width: 70%;
     padding: var(--heading-padding);
 }
 
-#app #header .menu {
+#app #header .btn-group {
     width: 30%;
-    padding: var(--heading-padding);
     text-align: center;
-    background: lightblue;
+    display: flex;
 }
 
-#app #sections {
-    padding: var(--soft-padding-x);
-}
-
-#app #sections .heading h1 {
-    color: lightblue;
-}
-
-.menu {
-    position: relative;
-    display: inline;
-    right: -22%;
-}
-
-.group-name {
-    display: inline;
-    position: relative;
-}
-
-.btn-default {
-    height: 100%;
-    width: 21%;
-    float: right;
+#app #header .btn {
+    width: 100%;
+    padding: var(--heading-padding);
     font-family: 'Cabin', sans-serif;
     background-color: #373061;
     color: #ffffff;
-    font-size: 25px;
     border: 1px solid #2c2653;
+    text-decoration: none;
 }
 
-.intro-image {
-    filter: blur(2px) brightness(50%);
+#app #sections {
+    position: relative;
+    padding: var(--soft-padding-x);
+    display: block;
+    color: #000;
+    /* default font family for sections */
+    font-family: 'whitney2';
 }
 
-.intro-text {
-    position: absolute;
+#app #sections .intro {
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+    text-align: center;
+    display: block;
+    /* filter: blur(2px) brightness(50%); */
+}
+
+#app #sections .intro-text {
     left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Whitney', sans-serif;
+    font-family: 'Whitney1', sans-serif;
 }
 
+#app #sections .intro .intro-text {
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+
+#app #sections h3 {
+  font-family: 'whitney3';
+}
+
+#app #sections p {
+  font-family: 'whitney2';
+}

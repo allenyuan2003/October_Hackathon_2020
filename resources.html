@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- no w3school they are dumb  and why are you looking at the source code -->
-<html style="border-right-style: none; border-top-style: none;">
+<html>
     <head>
         <!-- usual html page setup -->
         <title>Education</title>
@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- css -->
         <link rel="stylesheet" href="./main.css"/>
-        <link rel="font" href="./font-sheet.css"/>
+        <link rel="stylesheet" href="./resources.css" />
+        <link rel="stylesheet" href="./font-sheet.css"/>
         <!-- icon for this page -->
         <link rel="icon" type="image/png" sizes="256x256" href="./images/idk.jpeg"/>
         <link href="font-sheet.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko&display=swap">
@@ -29,22 +29,40 @@
     <body>
         <div id="app">
             <!-- navigation bar -->
-            <div id="header" style="background-color: #3f3772;">
-                <div class="group-name" style="font-family: 'Bungee', cursive; font-size: 24px; margin-bottom: 0; margin-top: 0; padding-top: 0px; padding-bottom: 0px;">EMBRACE THE GRIND</div>
-                <div class="btn-group" style="width: 70%;"> 
-                    <button type="button" class="btn btn-default">RESOURCES</button>                     
-                    <button type="button" class="btn btn-default" style="border-left-style: none;">TUTORS</button>
-                    <button type="button" class="btn btn-default">HOME</button>
+            <div id="header">
+                <div class="group-name">EMBRACE THE GRIND</div>
+                <div class="btn-group">
+                    <a href="./resources.html" class="btn">RESOURCES</a>
+                    <a href="./tutor.html" class="btn">TUTORS</a>
+                    <a href="./index.html" class="btn">HOME</a>
                 </div>
             </div>
             <!-- informational textarea starting -->
-            <div class="intro-image" style="background-image: url('images/TutorsStudents.jpeg'); height: 625px; background-position: center center; background-size: cover;"></div>
-            <div class="intro-text" style="position: absolute; left: 50%; bottom: 346px; text-align: center;">
-                <h1 style="font-size: 58px;">WANT TUTORS?</h1>
-                <br>
-                <span style="font-size: 30px;">WE GOT U BRO WE HAVE THE FINEST TUTORS</span>
-            </div>
-            <div class="pg-empty-placeholder"></div>
+            <div id="sections">
+              <div class="intro">
+                <!-- <img src="./images/idk.jpeg"/> -->
+                <div class="intro-text">
+                    <h1>RESOURCES</h1>
+                    <!-- using line-height instead of <br> -->
+                    <p>WE GOT U BRO WE HAVE THE FINEST resources</p>
+                </div>
+              </div>
+
+              <h3>Math Games</h3>
+              <p>One and One: This is based on a common term used in amateur basketball, in which the person shooting free throws faces the following situation: if the<br />player misses, the ball is live. Otherwise he/she gets another shot. We decided to apply this to our game as well, but instead of<br />shooting free throws, we’re doing math problems.<br /><br />For this exercise, you need a clean trash can and a crumpled paper ball. Place the can 15 feet from each competitor.  For each turn,<br />have the player solve a math-related problem. If he/she gets the problem correct, the player gets one point, and gets one chance to<br />shoot the paper ball into the trash can. The player must sit down in a criss cross stance,If he/she makes the shot, he gets one more<br />point. However, if the player gets the problem wrong, he/she gets zero points, and their turn is over. First to get 10(or any other number)<br />points is declared the winner!<br />For more exhilarating competitions like these, be sure to visit this link!<br /><a href="https://www.scholastic.com/teachers/articles/teaching-content/15-math-games-15-minutes-or-less/">Math game we prepared for you</a></p>
+
+              <h3>Vocabulary & Spelling Games</h3>
+              <p>Modified Shiritori : Inspired by the traditional Japanese word game, Shiritori, each player must say a word that starts with the ending letter of the last
+		          word. However, we’ve added some twists to this Japanese past time. Each person has 10-15 seconds to think of a word that starts<br />with the ending letter of the last word, and it has to be unique from the previous words. If the player fails to meet either of these<br />requirements, they would receive a strike. If a player gets 3 strikes, they are eliminated. The last man standing is the winner!<br />For more exciting activities like these, be sure to visit this link!<br /><a href="https://jimmyesl.com/esl-vocabulary-games/#:~:text=%2017%20Fun%20ESL%20Vocabulary%20Games%20to%20Teach,fun%20way%20to%20practise%20new%20vocabulary%21%20More%20
+">Game 1</a></p>
+
+              <h3>Grammar Games</h3>
+              <p>Squirt Gun Mania: Looking for a way to spice up grammar with a high-stakes yet kid-friendly game? Well this is the one for you!<br />For this game, you’d need one squirt gun.<br />For this exercise, have each competitor fix a sentence so that it becomes grammatically correct. For each error
+		          a player gets, he/she gains one point, and gets shot with the water gun one time by the host. If the contestant gets
+		          the sentence completely correct, he/she gets to shoot the host one time with the water gun! If a player gets 10
+		          (or any number) points, they are eliminated! The last man standing is the winner!<br />For more engaging diversions like these, be sure to visit this link!<br /><a href="https://www.brighthubeducation.com/elementary-school-activities/114376-fun-grammar-games-for-your-students/#:~:text=%20Here%20are%20some%20of%20our%20favorites%3A%20,Gorillas%2C%E2%80%9D%20this%20game%20allows%20you%20to...%20More%20">Grammar activities</a></div></p>
+
+
         </div>
         <script src="./app.js" type="text/javascript"></script>
     </body>

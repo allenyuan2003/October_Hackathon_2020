@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- no w3school they are dumb  and why are you looking at the source code -->
-<html style="border-right-style: none; border-top-style: none;">
+<html>
     <head>
         <!-- usual html page setup -->
         <title>Education</title>
@@ -8,11 +8,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- css -->
         <link rel="stylesheet" href="./main.css"/>
-        <link rel="font" href="./font-sheet.css"/>
+        <link rel="stylesheet" href="./index.css"/>
+        <link rel="stylesheet" href="./font-sheet.css"/>
         <!-- icon for this page -->
         <link rel="icon" type="image/png" sizes="256x256" href="./images/idk.jpeg"/>
         <link href="font-sheet.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiko&display=swap">
@@ -29,23 +29,36 @@
     <body>
         <div id="app">
             <!-- navigation bar -->
-            <div id="header" style="background-color: #3f3772;">
-                <div class="group-name" style="font-family: 'Bungee', cursive; font-size: 24px; margin-bottom: 0; margin-top: 0; padding-top: 0px; padding-bottom: 0px;">EMBRACE THE GRIND</div>
-                <div class="btn-group" style="width: 70%;"> 
-                    <button type="button" class="btn btn-default">RESOURCES</button>                     
-                    <button type="button" class="btn btn-default" style="border-left-style: none;">TUTORS</button>
-                    <button type="button" class="btn btn-default">HOME</button>
+            <div id="header">
+                <div class="group-name">EMBRACE THE GRIND</div>
+                <div class="btn-group">
+                    <a href="./resources.html" class="btn">RESOURCES</a>
+                    <a href="./tutor.html" class="btn">TUTORS</a>
+                    <a href="./index.html" class="btn">HOME</a>
                 </div>
             </div>
             <!-- informational textarea starting -->
-            <div class="intro-image" style="background-image: url('images/TutorsStudents.jpeg'); height: 625px; background-position: center center; background-size: cover;"></div>
-            <div class="intro-text" style="position: absolute; left: 50%; bottom: 346px; text-align: center;">
-                <h1 style="font-size: 58px;">WANT TUTORS?</h1>
-                <br>
-                <span style="font-size: 30px;">WE GOT U BRO WE HAVE THE FINEST TUTORS</span>
+
+            <div id="sections">
+                <div class="intro">
+                    <div clas="intro-text">
+                        <h1>WANT TUTORS?</h1>
+                        <p>WE GOT U BRO WE HAVE THE FINEST TUTORS</p>
+                    </div>
+                </div>
+
+                <h3>FIND TUTORS</h3>
+                <p>We understand that good tutoring is difficult to find, especially if your wallet’s been stretched thin! You scour khanAcademy and Youtube for<br />educational videos to teach yourself or your children, but those videos are inevitably one size fits all, and only leaves the future inheritors of this<br />world more confused than ever. To combat this pervasive issue, we compiled an extensive list of free tutoring services for the struggling student to use!</p>
+
+                <h3>OSAT(One Step At A Time)</h3>
+                <p>With over 50 tutors in its ranks, this organization is a rising power, chock full of dedicated and passionate high schoolers to lead the younger<br />generations. OSAT covers Math, Science, English, World Languages, and Computer Science, and teaches any student from Kindergarten to<br />eighth grade. For the older students who still want to further their learning, SAT Tutoring is also availiable! To receive tutoring, simply fill<br />out a form in the website, under the “Forms” section!<br />For more information, visit <a href="https://osatforstudents.weebly.com/">their website</a></p><br>
+
+                <h3>DVHS CSF Tutoring(Dougherty Valley High School California ScholarShip Foundation Tutoring)</h3>
+                <p>This organization has long been established as a reliable source of tutoring, and with that experience under their belts, you are sure to find their<br />ranks filled with competent and disciplined tutors. Unlike our last organization, this organization only deals with high schoolers, but CSF can still<br />aid struggling students in a variety of subjects. To receive tutoring, email the club or one of their officers, whose emails are in the link below!<br />Check this document<br />for more <a href="https://docs.google.com/document/d/1SiSR5OJz4gOboCWqfDnaAR6vtTNd0kk7i29xc2SezHQ/edit">information</a>!</p>
+                </dl>
             </div>
-            <div class="pg-empty-placeholder"></div>
-        </div>
+
+          </div>
         <script src="./app.js" type="text/javascript"></script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- no w3school they are dumb  and why are you looking at the source code -->
-<html style="border-right-style: none; border-top-style: none;">
+<html>
     <head>
         <!-- usual html page setup -->
         <title>Education</title>
@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- css -->
         <link rel="stylesheet" href="./main.css"/>
-        <link rel="font" href="./font-sheet.css"/>
+        <link rel="stylesheet" href="./font-sheet.css"/>
         <!-- icon for this page -->
         <link rel="icon" type="image/png" sizes="256x256" href="./images/idk.jpeg"/>
         <link href="font-sheet.css" rel="stylesheet" type="text/css">
@@ -29,23 +29,35 @@
     <body>
         <div id="app">
             <!-- navigation bar -->
-            <div id="header" style="background-color: #3f3772;">
-                <div class="group-name" style="font-family: 'Bungee', cursive; font-size: 24px; margin-bottom: 0; margin-top: 0; padding-top: 0px; padding-bottom: 0px;">EMBRACE THE GRIND</div>
-                <div class="btn-group" style="width: 70%;"> 
-                    <button type="button" class="btn btn-default">RESOURCES</button>                     
-                    <button type="button" class="btn btn-default" style="border-left-style: none;">TUTORS</button>
-                    <button type="button" class="btn btn-default">HOME</button>
+            <div id="header">
+                <div class="group-name">EMBRACE THE GRIND</div>
+                <div class="btn-group">
+                    <a href="./resources.html" class="btn">RESOURCES</a>
+                    <a href="./tutor.html" class="btn">TUTORS</a>
+                    <a href="./index.html" class="btn">HOME</a>
                 </div>
             </div>
             <!-- informational textarea starting -->
-            <div class="intro-image" style="background-image: url('images/TutorsStudents.jpeg'); height: 625px; background-position: center center; background-size: cover;"></div>
-            <div class="intro-text" style="position: absolute; left: 50%; bottom: 346px; text-align: center;">
-                <h1 style="font-size: 58px;">WANT TUTORS?</h1>
-                <br>
-                <span style="font-size: 30px;">WE GOT U BRO WE HAVE THE FINEST TUTORS</span>
+
+            <div id="sections">
+              <div class="intro">
+                <div class="intro-text">
+                    <h1>EMBRACE THE GRIND</h1>
+                    <br>
+                    <span>Home page</span>
+                </div>
+              </div>
+
+              <h3>Introduction</h3>
+              <p>Welcome to Embrace The Grind! In these trying times, everyone and their mothers are sick of sitting in front of their screens all day.
+This applies to our children as well, who does not hold the same mental fortitude as you or I. Our team of specialized students know the
+pain of excessive screen-time all too well, and we seek to protect the younger generations from the same fate. We hope to keep both the
+minds and bodies of humanity’s students active during this unprecedented pandemic!</p>
             </div>
-            <div class="pg-empty-placeholder"></div>
         </div>
+
+
+
         <script src="./app.js" type="text/javascript"></script>
     </body>
 </html>
