@@ -1,0 +1,37 @@
+/*
+woff newer version browsers
+ttf Safari og iOS, Chrome, Android, Firefox and Opera except Opera Mini
+*/
+
+/*
+	whitney1: thin
+	whitney2: bold
+	whitney3: heavy
+	whitney4: thicc
+ */
+
+ /* This is ont of my font collections xD - Michael */
+
+@font-face {
+	font-family: 'whitney1';
+	src: url('./fonts/whitney1.woff') format('woff'),
+		 url('./fonts/whitney1.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'whitney2';
+	src: url('./fonts/whitney2.woff') format('woff'),
+		 url('./fonts/whitney2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'whitney3';
+	src: url('./fonts/whitney3.woff') format('woff'),
+		 url('./fonts/whitney3.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'whitney4';
+	src: url('./fonts/whitney4.woff') format('woff'),
+		 url('./fonts/whitney4.ttf') format('truetype');
+}
