@@ -7,12 +7,7 @@ html {
     overflow: hidden;
 }
 
-body, html {
-  padding: 0;
-  margin: 0;
-  background: #fff;
-  overflow: hidden;
-}
+
 
 /* if we need some css art */
 /* used in button design */
@@ -85,49 +80,16 @@ body, html {
     color: #ffffff;
     font-size: 25px;
     border: 1px solid #2c2653;
-* { box-sizing: border-box; }
-
-/* default settings and css variables */
-:root {
-  font-family: arial;
-  color: #fff;
-  --heading-padding: 15px 0px;
-  --heading-font-size: 25px;
-
-  /* Important */
-  --soft-padding-x: 0 0 0 10px;
 }
 
-#app {
-  position: relative;
+.intro-image {
+    filter: blur(2px) brightness(50%);
 }
 
-#app #header {
-  /* collapse all items inside of header */
-  display: flex;
-  background-color: darkblue;
-  height: auto !important;
-  font-size: var(--heading-font-size);
-  padding: var(--soft-padding-x);
+.intro-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Whitney', sans-serif;
 }
 
-#app #header .group-name {
-  width: 70%;
-  color: #fff;
-  padding: var(--heading-padding);
-}
-
-#app #header .menu {
-  width: 30%;
-  padding: var(--heading-padding);
-  text-align: center;
-  background: lightblue;
-}
-
-#app #sections {
-  padding: var(--soft-padding-x)
-}
-
-#app #sections .heading h1 {
-  color: lightblue;
-}
